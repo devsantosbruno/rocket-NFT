@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div>
+    <header className="backdrop-blur-[2px] fixed top-0 left-0 right-0 bg-blur-xl">
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between gap-8 py-14">
           <a href="#">
@@ -31,6 +31,6 @@ export function Header() {
           </a>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

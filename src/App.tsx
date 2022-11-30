@@ -4,11 +4,17 @@ import "./styles/global.css";
 
 export function App() {
   return (
-    <div className="bg-nft">
+    <div>
       <Header />
-      <div className="container px-4 mx-auto">
-        <h1 className="text-violet-800">hello world</h1>;
-      </div>
+
+      <main>
+        <section className="bg-nft bg-cover bg-no-repeat min-h-screen pt-[166px]">
+          <div className="container px-4 mx-auto">
+            <h1 className="text-violet-800 testeHeight">hello world</h1>;
+          </div>
+        </section>
+      </main>
+
       <Footer />
     </div>
   );
