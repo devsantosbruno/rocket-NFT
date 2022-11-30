@@ -6,6 +6,10 @@ import {
   YoutubeLogo,
 } from "phosphor-react";
 
+function backToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 export function Footer() {
   return (
     <div className="bg-[#252525]">
@@ -15,7 +19,11 @@ export function Footer() {
             <img src="logo.svg" alt="" />
           </a>
 
-          <button type="button" className="bg-[#FF5B50] p-6">
+          <button
+            type="button"
+            onClick={backToTop}
+            className="bg-[#FF5B50] p-6"
+          >
             <ArrowUp size={22} color="black" weight="bold" />
           </button>
         </div>
