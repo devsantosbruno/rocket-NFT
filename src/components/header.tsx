@@ -13,7 +13,10 @@ export function Header() {
               ["Sobre", "/home"],
               ["FAQ", "/home"],
             ].map(([title, url]) => (
-              <a href={url} className="text-white text-lg">
+              <a
+                href={url}
+                className="text-lg text-white hover:text-[#FF5B50] transition duration-200"
+              >
                 {title}
               </a>
             ))}
