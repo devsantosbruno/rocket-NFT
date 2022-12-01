@@ -5,8 +5,8 @@ export function Header() {
   return (
     <header className="backdrop-blur-[2px] fixed top-0 left-0 right-0 bg-blur-xl">
       <div className="container px-4 mx-auto">
-        <div className="flex items-center justify-between gap-8 py-14">
-          <a href="#">
+        <div className="flex items-center justify-between gap-8 py-7 lg:py-14">
+          <a href="#" className="max-w-[200px] md:max-w-none">
             <img src="logo.svg" alt="" />
           </a>
 
