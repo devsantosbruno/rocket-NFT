@@ -13,7 +13,7 @@ export function App() {
       <main>
         <section className="bg-nft bg-cover bg-no-repeat pt-[166px]">
           <div className="container px-4 mx-auto">
-            <div className="grid grid-cols-6 gap-10">
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-6 lg:gap-5 2xl:gap-10">
               <div className="flex flex-col justify-between gap-4 col-span-2">
                 <p className="text-white text-[1.125rem]">
                   Mercado digital para colecionáveis em criptos e tokens não
@@ -31,17 +31,17 @@ export function App() {
                 </div>
               </div>
 
-              <h1 className="text-white font-bold text-5xl leading-[3.8125rem] col-span-3">
+              <h1 className="mb-4 lg:mb-0 text-white font-bold text-3xl lg:text-5xl lg:leading-[3.8125rem] col-span-3">
                 Descubra a verdadeira arte digital e colecione diversas{" "}
                 <span className="text-[#FF5B50]">NFTs</span>
               </h1>
 
-              <figure>
+              <figure className="hidden lg:block">
                 <img src="badge.svg" alt="" className="ml-auto" />
               </figure>
             </div>
 
-            <div className="grid grid-cols-4 gap-x-4 gap-y-14 mt-24">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-4 lg:gap-y-14 mt-24">
               {[
                 ["gallery-1.png"],
                 ["gallery-2.png"],
@@ -180,7 +180,7 @@ export function App() {
               <span className="text-[#FF5B50]">Melhores</span> artistas
             </h2>
 
-            <div className="grid grid-cols-3 gap-28 mt-20 mb-16">
+            <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 2xl:gap-28 mt-10 2xl:mt-20 mb-8 2xl:mb-16">
               {[
                 ["Mayk Brito", "80"],
                 ["Jakeliny G.", "99"],
