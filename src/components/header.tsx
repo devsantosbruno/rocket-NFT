@@ -7,13 +7,14 @@ export function Header() {
             <img src="logo.svg" alt="" />
           </a>
 
-          <nav className="flex flex-shrink-0 space-x-14">
+          <nav className="hidden sm:flex flex-shrink-0 space-x-14">
             {[
               ["Comprar NFT", "/home"],
               ["Sobre", "/home"],
               ["FAQ", "/home"],
-            ].map(([title, url]) => (
+            ].map(([title, url], index) => (
               <a
+                key={index}
                 href={url}
                 className="text-lg text-white hover:text-[#FF5B50] transition duration-200"
               >
@@ -24,7 +25,7 @@ export function Header() {
 
           <a
             href="#"
-            className="flex items-center gap-3 font-bold bg-white text-black py-3 px-5"
+            className="hidden sm:flex items-center gap-3 font-bold bg-white text-black py-3 px-5"
           >
             <img src="logo_MetaMask.svg" alt="" />
             Conectar carteira

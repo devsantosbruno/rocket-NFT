@@ -63,9 +63,10 @@ export function Footer() {
                     ["Serviços", "/home"],
                     ["Time", "/home"],
                     ["Carreira", "/home"],
-                  ].map(([title, url]) => (
+                  ].map(([title, url], index) => (
                     <div>
                       <a
+                        key={index}
                         href={url}
                         className="text-white text-lg text-[#5A5757] hover:text-[#FF5B50] transition duration-200"
                       >
@@ -84,9 +85,10 @@ export function Footer() {
                     ["Populares", "/home"],
                     ["Vendas", "/home"],
                     ["Contato", "/home"],
-                  ].map(([title, url]) => (
+                  ].map(([title, url], index) => (
                     <div>
                       <a
+                        key={index}
                         href={url}
                         className="text-white text-lg text-[#5A5757] hover:text-[#FF5B50] transition duration-200"
                       >
@@ -105,9 +107,10 @@ export function Footer() {
                     ["Termos", "/home"],
                     ["Política", "/home"],
                     ["Ajuda", "/home"],
-                  ].map(([title, url]) => (
+                  ].map(([title, url], index) => (
                     <div>
                       <a
+                        key={index}
                         href={url}
                         className="text-white text-lg text-[#5A5757] hover:text-[#FF5B50] transition duration-200"
                       >

@@ -51,8 +51,13 @@ export function App() {
                 ["gallery-6.png"],
                 ["gallery-7.png"],
                 ["gallery-8.png"],
-              ].map(([title]) => (
-                <img src={title} alt="" className="border-[1px] w-full" />
+              ].map(([title], index) => (
+                <img
+                  key={index}
+                  src={title}
+                  alt=""
+                  className="border-[1px] w-full"
+                />
               ))}
             </div>
           </div>
@@ -184,7 +189,12 @@ export function App() {
                 ["Ana Silva", "28"],
                 ["Ana Silva", "20"],
               ].map(([name, quantity], index) => (
-                <Artist artist={index} name={name} quantity={quantity} />
+                <Artist
+                  key={index}
+                  artist={index}
+                  name={name}
+                  quantity={quantity}
+                />
               ))}
             </div>
 

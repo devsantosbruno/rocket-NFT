@@ -1,5 +1,4 @@
 export function Artist(props: any) {
-  console.log(props.artist);
   return (
     <div className="bg-[#252525] group hover:bg-[#FF5B50] transition duration-200 flex items-center gap-10 px-8 py-6">
       <img src={`artist-${props.artist}.png`} alt="" />
