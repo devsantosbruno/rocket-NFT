@@ -150,22 +150,22 @@ export function App() {
 
         <section className="bg-[#0E0E0E] py-36">
           <div className="container px-4 mx-auto">
-            <h2 className="text-white text-5xl font-bold">
+            <h2 className="text-white text-5xl font-bold text-center">
               <span className="text-[#FF5B50]">Populares</span> da semana
             </h2>
 
-            <div className="grid grid-cols-5 mt-40">
-              <div className="flex flex-col gap-20">
+            <div className="grid sm:grid-cols-2 gap-y-10 gap-x-12 md:gap-x-0 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 mt-14 sm:mt-20 lg:mt-40">
+              <div className="flex flex-col gap-10 sm:gap-20">
                 <Astronaut astronaut={1} name="Mayk Brito" rkt={1.5} />
 
                 <Astronaut astronaut={3} name="João Inácio (Biro)" rkt={3.75} />
               </div>
 
-              <div className="h-full col-span-3">
+              <div className="hidden md:block h-full xl:col-span-2 2xl:col-span-3">
                 <div className="h-full w-[1px] bg-[#5A5757] mx-auto"></div>
               </div>
 
-              <div className="flex flex-col gap-20">
+              <div className="flex flex-col gap-10 sm:gap-20">
                 <Astronaut astronaut={2} name="Jakeliny Gracielly" rkt={2.0} />
 
                 <Astronaut astronaut={4} name="Tamires Santos" rkt={4.3} />
