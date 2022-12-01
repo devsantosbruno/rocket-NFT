@@ -13,8 +13,8 @@ export function App() {
       <main>
         <section className="bg-nft bg-cover bg-no-repeat pt-[166px]">
           <div className="container px-4 mx-auto">
-            <div className="grid grid-cols-4 gap-10">
-              <div className="flex flex-col justify-between gap-4">
+            <div className="grid grid-cols-6 gap-10">
+              <div className="flex flex-col justify-between gap-4 col-span-2">
                 <p className="text-white text-[1.125rem]">
                   Mercado digital para colecionáveis em criptos e tokens não
                   fungível (NFT). Compre, venda e descubra ativos digitais
@@ -31,7 +31,7 @@ export function App() {
                 </div>
               </div>
 
-              <h1 className="text-white font-bold text-5xl leading-[3.8125rem] col-span-2">
+              <h1 className="text-white font-bold text-5xl leading-[3.8125rem] col-span-3">
                 Descubra a verdadeira arte digital e colecione diversas{" "}
                 <span className="text-[#FF5B50]">NFTs</span>
               </h1>
