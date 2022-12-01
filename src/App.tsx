@@ -65,25 +65,31 @@ export function App() {
 
         <section className="bg-[#0E0E0E] border-b-[1px] border-[#5A5757]">
           <div className="container px-4 mx-auto">
-            <div className="grid grid-cols-5">
-              <div className="flex flex-col justify-evenly border-r-[1px] border-[#5A5757]">
+            <div className="lg:grid lg:grid-cols-5">
+              <div className="flex lg:flex-col justify-evenly lg:border-r-[1px] lg:border-[#5A5757] pt-12 lg:pt-0">
                 <div className="flex flex-col text-center">
-                  <strong className="text-white text-5xl">10K+</strong>
-                  <span className="text-[#5A5757] font-semibold text-xl">
+                  <strong className="text-white text-3xl sm:text-5xl">
+                    10K+
+                  </strong>
+                  <span className="text-[#5A5757] font-semibold text-lg sm:text-xl">
                     Artes
                   </span>
                 </div>
 
                 <div className="flex flex-col text-center">
-                  <strong className="text-white text-5xl">200+</strong>
-                  <span className="text-[#5A5757] font-semibold text-xl">
+                  <strong className="text-white text-3xl sm:text-5xl">
+                    200+
+                  </strong>
+                  <span className="text-[#5A5757] font-semibold text-lg sm:text-xl">
                     Vendas
                   </span>
                 </div>
 
                 <div className="flex flex-col text-center">
-                  <strong className="text-white text-5xl">20</strong>
-                  <span className="text-[#5A5757] font-semibold text-xl">
+                  <strong className="text-white text-3xl sm:text-5xl">
+                    20
+                  </strong>
+                  <span className="text-[#5A5757] font-semibold text-lg sm:text-xl">
                     Artistas
                   </span>
                 </div>
@@ -91,8 +97,8 @@ export function App() {
 
               <div className="col-span-4">
                 <div className="flex flex-col justify-between h-full">
-                  <div className="flex gap-x-32 py-16 px-16">
-                    <div className="text-white text-[1.125rem]">
+                  <div className="flex flex-col sm:flex-row gap-10 lg:gap-x-32 py-10 sm:py-16 lg:px-16">
+                    <div className="text-white sm:text-[1.125rem]">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Congue malesuada amet pretium lacus. Id
@@ -104,7 +110,7 @@ export function App() {
                         ultricies mauris mattis nunc semper.
                       </p>
 
-                      <div className="mt-16">
+                      <div className="mt-4 sm:mt-16">
                         <a
                           href="#"
                           className="underline text-white hover:text-[#FF5B50] transition duration-200"
@@ -114,7 +120,7 @@ export function App() {
                       </div>
                     </div>
 
-                    <div className="text-white text-[1.125rem]">
+                    <div className="text-white sm:text-[1.125rem]">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Congue malesuada amet pretium lacus. Id
@@ -126,7 +132,7 @@ export function App() {
                         ultricies mauris mattis nunc semper.
                       </p>
 
-                      <div className="mt-16">
+                      <div className="mt-4 sm:mt-16">
                         <a
                           href="#"
                           className="underline text-white hover:text-[#FF5B50] transition duration-200"
@@ -140,7 +146,7 @@ export function App() {
                   <img
                     src="banner2.png"
                     alt=""
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full min-h-[200px] object-cover object-center"
                   />
                 </div>
               </div>
