@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "phosphor-react";
+import { Artist } from "./components/Artist";
 import { Astronaut } from "./components/Astronaut";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -164,6 +166,31 @@ export function App() {
                 <Astronaut astronaut={4} name="Tamires Santos" rkt={4.3} />
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="bg-[#0E0E0E] pb-36">
+          <div className="container px-4 mx-auto text-center">
+            <h2 className="text-white text-5xl font-bold">
+              <span className="text-[#FF5B50]">Melhores</span> artistas
+            </h2>
+
+            <div className="grid grid-cols-3 gap-28 mt-20 mb-16">
+              {[
+                ["Mayk Brito", "80"],
+                ["Jakeliny G.", "99"],
+                ["João I. (Biro)", "50"],
+                ["Tamires Santos", "43"],
+                ["Ana Silva", "28"],
+                ["Ana Silva", "20"],
+              ].map(([name, quantity], index) => (
+                <Artist artist={index} name={name} quantity={quantity} />
+              ))}
+            </div>
+
+            <a href="#" className="text-white inline-flex gap-4">
+              Ver todos os artistas <ArrowUpRight size={24} color="#FF5B50" />
+            </a>
           </div>
         </section>
       </main>

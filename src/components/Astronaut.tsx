@@ -16,7 +16,7 @@ export function Astronaut(props: any) {
       <img
         src={`astronaut-${props.astronaut}.png`}
         alt=""
-        className="w-full h-full max-h-48 object-cover object-center"
+        className="w-full max-h-48 object-cover object-center"
       />
     </div>
   );
