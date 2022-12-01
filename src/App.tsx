@@ -7,7 +7,7 @@ import "./styles/global.css";
 
 export function App() {
   return (
-    <div>
+    <div className="max-w-screen overflow-hidden">
       <Header />
 
       <main>
