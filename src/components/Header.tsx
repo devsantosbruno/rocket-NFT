@@ -6,15 +6,15 @@ export function Header() {
     <header className="backdrop-blur-[2px] fixed top-0 left-0 right-0 bg-blur-xl">
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between gap-8 py-7 lg:py-14">
-          <a href="#" className="max-w-[200px] md:max-w-none">
+          <a href="#Home" className="max-w-[200px] md:max-w-none">
             <img src="logo.svg" alt="" />
           </a>
 
           <nav className="hidden lg:flex flex-shrink-0 space-x-14">
             {[
-              ["Comprar NFT", "/home"],
-              ["Sobre", "/home"],
-              ["FAQ", "/home"],
+              ["Comprar NFT", "#Home"],
+              ["Sobre", "#About"],
+              ["FAQ", "#Footer"],
             ].map(([title, url], index) => (
               <a
                 key={index}
@@ -26,13 +26,10 @@ export function Header() {
             ))}
           </nav>
 
-          <a
-            href="#"
-            className="hidden lg:flex items-center justify-center gap-3 font-bold bg-white text-black py-3 px-5"
-          >
+          <div className="hidden lg:flex items-center justify-center gap-3 font-bold bg-white text-black py-3 px-5">
             <img src="logo_MetaMask.svg" alt="" />
             Conectar carteira
-          </a>
+          </div>
 
           <div className="lg:hidden flex-shrink-0">
             <Dialog.Root>
@@ -64,9 +61,9 @@ export function Header() {
                       Conectar carteira
                     </a>
                     {[
-                      ["Comprar NFT", "/home"],
-                      ["Sobre", "/home"],
-                      ["FAQ", "/home"],
+                      ["Comprar NFT", ""],
+                      ["Sobre", ""],
+                      ["FAQ", ""],
                     ].map(([title, url], index) => (
                       <a
                         key={index}

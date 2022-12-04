@@ -12,7 +12,7 @@ function backToTop() {
 
 export function Footer() {
   return (
-    <div className="bg-[#252525]">
+    <div className="bg-[#252525]" id="Footer">
       <div className="container px-4 mx-auto pt-20 pb-14">
         <div className="flex items-center justify-between">
           <a href="#" className="max-w-[200px] md:max-w-none">
@@ -61,7 +61,7 @@ export function Footer() {
                 </h4>
                 <nav className="flex flex-col space-y-4">
                   {[
-                    ["Sobre", "/home"],
+                    ["Sobre", "#About"],
                     ["Serviços", "/home"],
                     ["Time", "/home"],
                     ["Carreira", "/home"],
@@ -85,10 +85,10 @@ export function Footer() {
                 </h4>
                 <nav className="flex flex-col space-y-4">
                   {[
-                    ["Galeria", "/home"],
-                    ["Populares", "/home"],
-                    ["Vendas", "/home"],
-                    ["Contato", "/home"],
+                    ["Galeria", ""],
+                    ["Populares", ""],
+                    ["Vendas", ""],
+                    ["Contato", ""],
                   ].map(([title, url], index) => (
                     <div>
                       <a
@@ -109,10 +109,10 @@ export function Footer() {
                 </h4>
                 <nav className="flex flex-col space-y-4">
                   {[
-                    ["FAQs", "/home"],
-                    ["Termos", "/home"],
-                    ["Política", "/home"],
-                    ["Ajuda", "/home"],
+                    ["FAQs", "#Footer"],
+                    ["Termos", ""],
+                    ["Política", ""],
+                    ["Ajuda", ""],
                   ].map(([title, url], index) => (
                     <div>
                       <a
@@ -142,19 +142,19 @@ export function Footer() {
           </a>
 
           <div className="flex items-center space-x-6 md:space-x-12">
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/rocketseat/" target="_blank">
               <InstagramLogo
                 size={24}
                 className="text-[#5A5757] hover:text-[#FF5B50] transition duration-200"
               />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.youtube.com/@rocketseat" target="_blank">
               <YoutubeLogo
                 size={24}
                 className="text-[#5A5757] hover:text-[#FF5B50] transition duration-200"
               />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/rocketseat" target="_blank">
               <TwitterLogo
                 size={24}
                 className="text-[#5A5757] hover:text-[#FF5B50] transition duration-200"
